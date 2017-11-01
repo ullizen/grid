@@ -5,6 +5,33 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+a {
+	text-decoration: none;
+	color: #f7775d;
+}
+
+#header {
+	display: flex;
+	align-items: center;
+	/*background: green;*/
+	flex: 1 1 auto;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+	/*height: 100px;*/
+	/*background: red;*/
+	/*align-self: flex-end;*/
+}
+
+nav p {
+	flex-grow: 1;
+	height: 100%;
+	margin: 0;
+}
+
 #main {
 	padding: 10px;
 }
@@ -67,6 +94,10 @@ body {
 	height: 150px;
 }
 
+.page--column {
+	flex-direction: row;
+}
+
 .page header {
 	background: #ccc;
 	height: 20%;
@@ -100,8 +131,20 @@ body {
 }
 
 .row {
+	display: flex;
 	background: #ccc;
 	flex-grow: 1;
 	margin: 4px;
 	border-radius: 3px;
+}
+
+.column {
+	background: #ccc;
+	flex-grow: 1;
+	margin: 4px;
+	border-radius: 3px;
+}
+
+.box {
+	background: #aaa;
 }
