@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:800');
+
+.logo {
+	display: flex;
+	width: 80px;
+	font-size: 48px;
+	flex-wrap: wrap;
+	flex-direction: row;
+	font-family: 'Kanit', sans-serif;
+	color: #222;
+	/*border: 2px solid #aaa;*/
+	/*border-radius: 3px;*/
+}
+
+.logo__letter {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	line-height: 0.84;
+	/*border-bottom: 1px solid #222;*/
+}
+
+.logo__letter--box {
+	flex: 1 1 auto;
+	background: black;
+	margin: 4px;
+	border-radius: 3px;
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.page {
+	display: flex;
+	border: 1px solid #555;
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+}
