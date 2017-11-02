@@ -84,67 +84,34 @@ nav p {
 }
 
 .page {
-	display: flex;
-	flex-direction: column;
-	/*border: 1px solid #555;*/
-	/*flex: 1 1 auto;*/
 	margin-right: 20px;
 	margin-bottom: 20px;
 	width: 150px;
 	height: 150px;
-}
-
-.page--column {
+	display: flex;
 	flex-direction: row;
 }
 
-.page header {
-	background: #ccc;
-	height: 20%;
-	margin: 4px;
-	border-radius: 3px;
-	/*flex: 1 1 auto;*/
-}
-
-.page header:hover {
-	background: #f7775d;
-}
-
-.page main {
+.row {
 	display: flex;
+	flex: 1 1 auto;
+	flex-direction: row;
+}
+
+.col {
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
+}
+
+.element {
 	background: #ccc;
 	margin: 4px;
 	flex: 1 1 auto;
 	border-radius: 3px;
 }
 
-.page footer {
-	background: #ccc;
-	height: 20%;
-	margin: 4px;
-	border-radius: 3px;
-}
-
-.page aside {
-	background: #aaa;
-	width: 30%;
-}
-
-.row {
-	display: flex;
-	background: #ccc;
-	flex-grow: 1;
-	margin: 4px;
-	border-radius: 3px;
-}
-
-.column {
-	background: #ccc;
-	flex-grow: 1;
-	margin: 4px;
-	border-radius: 3px;
-}
-
-.box {
-	background: #aaa;
+header.element {
+	/*height: 10%;*/
+	background: green;
 }
