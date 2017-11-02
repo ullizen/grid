@@ -14,7 +14,6 @@ a {
 #header {
 	display: flex;
 	align-items: center;
-	/*background: green;*/
 	flex: 1 1 auto;
 }
 
@@ -22,9 +21,6 @@ nav {
 	display: flex;
 	flex-direction: column;
 	margin-left: 20px;
-	/*height: 100px;*/
-	/*background: red;*/
-	/*align-self: flex-end;*/
 }
 
 nav p {
@@ -109,10 +105,16 @@ nav p {
 }
 
 .element {
-	background: #d5d5d9;
+	display: flex;
+	background: #d9d9dc;
 	margin: 4px;
 	flex: 1 1 auto;
-	border-radius: 3px;
+	border-radius: 5px;
+	line-height: 1;
+	color: #555;
+	padding: 0;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .big {
