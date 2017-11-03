@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body {
+	background: #f9f9fb;
 	font-family: 'Lato', sans-serif;
-	background: #f5f5f7;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	align-items: center;
 }
 
 a {
@@ -14,7 +18,12 @@ a {
 #header {
 	display: flex;
 	align-items: center;
-	flex: 1 1 auto;
+	flex-grow: 1 1 auto;
+	justify-content: center;
+	width: 100%;
+	background: white;
+	/*border-bottom: 1px solid #d5d5d5;*/
+	box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.2);
 }
 
 nav {
@@ -30,11 +39,19 @@ nav p {
 }
 
 #main {
-	padding: 10px;
+	/*padding: 10px;*/
 }
 
 #main h2 {
 	margin: 24px 5px;
+}
+
+#footer {
+	display: flex;
+	flex-direction: column;
+	background: #e9e9eb;
+	width: 100%;
+	align-items: center;
 }
 
 .logo {
@@ -44,11 +61,9 @@ nav p {
 	flex-wrap: wrap;
 	flex-direction: row;
 	font-family: 'Kanit', sans-serif;
-	color: #222;
+	color: #333;
 	margin: 10px;
 	font-weight: 900;
-	/*border: 2px solid #aaa;*/
-	/*border-radius: 3px;*/
 }
 
 .logo__letter {
@@ -56,7 +71,6 @@ nav p {
 	justify-content: center;
 	width: 50%;
 	line-height: 0.84;
-	/*border-bottom: 1px solid #222;*/
 }
 
 .logo__letter--box {
@@ -73,10 +87,13 @@ nav p {
 
 
 .page-wrapper {
+	max-width: 1000px;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
 	flex-wrap: wrap;
 	margin-bottom: 20px;
+	padding: 20px;
 }
 
 .page {
@@ -115,6 +132,10 @@ nav p {
 	padding: 0;
 	align-items: center;
 	justify-content: space-around;
+}
+
+.element:hover {
+	background: #f7775d;
 }
 
 .big {
