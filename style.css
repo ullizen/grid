@@ -154,8 +154,10 @@ nav p {
 .big {
 	flex-grow: 2;
 }
+.bigger {
+	flex-grow: 3;
+}
 
-.page header, .page footer {
-	height: 18%;
-	flex: 0 1 auto;
+.biggest {
+	flex-grow: 4;
 }
